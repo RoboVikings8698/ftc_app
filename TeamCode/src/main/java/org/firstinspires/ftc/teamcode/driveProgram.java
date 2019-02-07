@@ -36,6 +36,9 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
+import net.frogbots.ftcopmodetunercommon.opmode.TunableLinearOpMode;
+import net.frogbots.ftcopmodetunercommon.opmode.TunableOpMode;
+
 
 /**
  * This file contains an minimal example of a Linear "OpMode". An OpMode is a 'program' that runs in either
@@ -65,6 +68,7 @@ public class driveProgram extends LinearOpMode {
 
     @Override
     public void runOpMode() {
+        //telemetry.addData("test", getInt("var1"));
         telemetry.addData("Status", "Initialized");
         telemetry.update();
 
